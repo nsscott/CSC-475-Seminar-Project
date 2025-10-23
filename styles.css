@@ -1,0 +1,115 @@
+
+li{
+    /*  list-style-type is used to define the marker (bullet point) for list items */
+    list-style-type: square;
+    color: blue;
+    font-size: 18px;
+    margin-bottom: 8px;
+    /* background-color: blueviolet; */
+}
+
+a{
+    /* font-family:'Courier New', Courier, monospace; */
+    /* background-color: aqua; */
+}
+
+section {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    /* background-color: lightgray; */
+    /* add drop shadow */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* .image-box{
+    border: 2px solid #ccc;
+    padding: 5px;
+    margin: 10px 0;
+    display: inline-block;
+    
+}*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.image-box{
+    border: 2px solid #ccc;
+    padding: 5px;
+    margin: 10px 0;
+    display: inline-block;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-box img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-box:hover {
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ai-button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.floating-menu{
+    /* Top center horizontal translucent*/
+
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(178, 170, 170, 0.4);
+    padding: 10px 20px;
+    border-radius: 8px;
+    z-index: 1000;
+
+}
+
+.floating-menu a{
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.floating-menu a:hover{
+    text-decoration: underline;
+}
+
+.menu-button{
+    background-color: white;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
